@@ -41,13 +41,15 @@ public class Cliente {
     public String getTelefono() {
         return Telefono;
     }
-
+    
     public void setTelefono(String telefono) {
         Telefono = telefono;
     }
 
+
+
+public String getinformation (){
+    return "Nombre: " + getNombre() + "Apellido:" + getApellido() + "Identificacion" + getIdentificacion() +"Telefono" + getTelefono();
 }
 
-public String getinformation () {
-    return "Nombre: " + getNombre() + "Apellido:" + getApellido() + "Identificacion" + getIdentificacion() +"Telefono" + getTelefono();
 }
