@@ -1,11 +1,11 @@
 package Common;
 
 public class Cliente {
-    //Paso 1 Definir los atributos. Los atributos son representados con variables.
+    // Paso 1 Definir los atributos. Los atributos son representados con variables.
     private String Nombre;
     private String Apellido;
     private String Identificacion;
-    private String Telefono;//8888888 o 8888-8888
+    private String Telefono;// 8888888 o 8888-8888
 
     public Cliente(String nombre, String apellido, String identificacion, String telefono) {
         Nombre = nombre;
@@ -45,4 +45,9 @@ public class Cliente {
     public void setTelefono(String telefono) {
         Telefono = telefono;
     }
+
+}
+
+public String getinformation () {
+    return "Nombre: " + getNombre() + "Apellido:" + getApellido() + "Identificacion" + getIdentificacion() +"Telefono" + getTelefono();
 }
