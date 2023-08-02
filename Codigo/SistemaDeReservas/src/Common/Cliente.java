@@ -1,55 +1,64 @@
 package Common;
 
-public class Cliente {
-    // Paso 1 Definir los atributos. Los atributos son representados con variables.
-    private String Nombre;
-    private String Apellido;
-    private String Identificacion;
-    private String Telefono;// 8888888 o 8888-8888
+import java.lang.reflect.Constructor;
 
-    public Cliente(String nombre, String apellido, String identificacion, String telefono) {
-        Nombre = nombre;
-        Apellido = apellido;
-        Identificacion = identificacion;
-        Telefono = telefono;
+public class Cliente {
+
+    private String vgNombre;
+    private String vgApellido;
+    private String vgIdentificacion;
+    private String vgTelefono;
+
+    public Cliente(){
+        vgNombre = "";
+        vgApellido = "";
+        vgIdentificacion = "";
+        vgTelefono = "";
+    }
+
+    public Cliente(String vpNombre, String vpApellido, String vpIdentificacion, String vpTelefono) {
+        
+        vgNombre = vpNombre;
+        vgApellido = vpApellido;
+        vgIdentificacion = vpIdentificacion;
+        vgTelefono = vpTelefono;
     }
 
     public String getNombre() {
-        return Nombre;
-    }
-
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+        return vgNombre;
     }
 
     public String getApellido() {
-        return Apellido;
-    }
-
-    public void setApellido(String apellido) {
-        Apellido = apellido;
+        return vgApellido;
     }
 
     public String getIdentificacion() {
-        return Identificacion;
-    }
-
-    public void setIdentificacion(String identificacion) {
-        Identificacion = identificacion;
+        return vgIdentificacion;
     }
 
     public String getTelefono() {
-        return Telefono;
+        return vgTelefono;
+    }
+
+    public void setNombre(String nombre) {
+        vgNombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        vgApellido = apellido;
     }
     
-    public void setTelefono(String telefono) {
-        Telefono = telefono;
+    public void setIdentificacion(String identificacion) {
+        vgIdentificacion = identificacion;
     }
 
 
+    public void setTelefono(String telefono) {
+        vgTelefono = telefono;
+    }
 
-public String getinformation (){
-    return "Nombre: " + getNombre() + "Apellido:" + getApellido() + "Identificacion" + getIdentificacion() +"Telefono" + getTelefono();
-}
+    public String getInformacion() {
+        return "Nombre: " + getNombre() + " Apellido: " + getApellido() + " Identificacion: " + getIdentificacion() + "Telefono: " + getTelefono();
+    }
 
 }
