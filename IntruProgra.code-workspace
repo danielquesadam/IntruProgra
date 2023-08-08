@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "Progra/IntruProgra"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Codigo/SistemaDeReservas/src",
+			"Codigo/SistemaDeReservas"
+		]
+	}
+}
